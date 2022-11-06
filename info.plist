@@ -91,7 +91,7 @@
 				<key>script</key>
 				<string>iip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'`
 
-oip=`curl -s -L 'https://playground.fudongdong.com/lbs/getIp' | awk -F\" '{print $4}'`
+oip=`curl -s -L 'https://playground.z.wiki/lbs/getIp' | awk -F\" '{print $4}'`
 
 echo "&lt;?xml version='1.0'?&gt;&lt;items&gt;&lt;item uid='' arg='${iip}' valid='yes' autocomplete=''&gt; &lt;title&gt;Local IP&lt;/title&gt; &lt;subtitle&gt;${iip}&lt;/subtitle&gt;&lt;icon&gt;local-ip.png&lt;/icon&gt; &lt;/item&gt;&lt;item uid='' arg='${oip}' valid='yes' autocomplete=''&gt; &lt;title&gt;Internet IP&lt;/title&gt; &lt;subtitle&gt;${oip}&lt;/subtitle&gt;&lt;icon&gt;internet-ip.png&lt;/icon&gt; &lt;/item&gt;&lt;/items&gt;"</string>
 				<key>scriptargtype</key>
